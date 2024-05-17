@@ -25,8 +25,14 @@ class App extends StatelessWidget {
         HadethDetails.routName:(context) => HadethDetails(),
         HadethTab.routName:(context) => HadethTab(),
       },
+
+
+
+
       theme: ThemeLight.lightTheme,
-       
+
+
+
     );
   }
 }
