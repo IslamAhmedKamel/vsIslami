@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/hadethDetails.dart';
 import 'package:flutter_application_1/hadethModel.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class HadethTab extends StatefulWidget {
   const HadethTab({super.key});
   static const String routName = 'hadethScreen';
@@ -51,7 +51,12 @@ class _HadethTabState extends State<HadethTab> {
           ),
         ),
         Divider(),
-        Text('الاحاديث'),
+        Text(
+
+          AppLocalizations.of(context)!.ahadeths,
+
+
+        ),
         Divider(),
         Expanded(
           child: ListView.separated(

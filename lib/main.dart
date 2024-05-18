@@ -6,7 +6,8 @@ import 'package:flutter_application_1/home.dart';
 import 'package:flutter_application_1/soraScreen.dart';
 import 'package:flutter_application_1/tabs/hadeth.dart';
 import 'package:flutter_application_1/themeData.dart';
-
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 void main() {
   runApp(App());
 }
@@ -14,9 +15,17 @@ void main() {
 class App extends StatelessWidget {
   const App({super.key});
 
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+
+
       debugShowCheckedModeBanner: false,
       initialRoute: HomeScreen.routName,
       routes: {

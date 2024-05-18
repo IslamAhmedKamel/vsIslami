@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
  import 'package:flutter_application_1/soraModel.dart';
 import 'package:flutter_application_1/soraScreen.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 // ignore: must_be_immutable
 class QuraanTab extends StatelessWidget {
@@ -134,7 +135,7 @@ class QuraanTab extends StatelessWidget {
             color: Colors.brown,
           ),
           Text(
-            'إسم السورة',
+            AppLocalizations.of(context)!.soraName,
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           Divider(

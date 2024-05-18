@@ -104,7 +104,7 @@ import 'package:flutter_application_1/tabs/quraan.dart';
 import 'package:flutter_application_1/tabs/radio.dart';
 import 'package:flutter_application_1/tabs/sebha.dart';
 import 'package:flutter_application_1/tabs/setting.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // ignore: must_be_immutable
 class HomeScreen extends StatefulWidget {
   static const String routName = 'homeScreen';
@@ -131,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Islami',
+            AppLocalizations.of(context)!.appTitle,
             style: Theme.of(context).textTheme.bodyLarge,
           ),
         ),

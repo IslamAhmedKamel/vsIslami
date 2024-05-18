@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/hadethModel.dart';
@@ -9,9 +9,9 @@ class HadethDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var args = ModalRoute.of(context)?.settings.arguments as HadethModel;
+    var args = ModalRoute.of(context)!.settings.arguments as HadethModel;
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
             'assets/images/default_bg.png',
