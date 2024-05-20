@@ -24,7 +24,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-
+      locale: Locale('en'),
 
       debugShowCheckedModeBanner: false,
       initialRoute: HomeScreen.routName,
